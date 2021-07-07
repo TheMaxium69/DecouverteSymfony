@@ -14,11 +14,16 @@ class HomeController extends AbstractController
     public function index(): Response
     {
 
-        $tableau = "Je suis une variable String";
+        $text = "Je suis une variable String";
+
+        $tableau = [
+            'michel', 'christophe'
+        ];
 
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
-            'tableauName' => $tableau
+            'textTest' => $text,
+            'tableauName' => $tableau,
         ]);
     }
 }

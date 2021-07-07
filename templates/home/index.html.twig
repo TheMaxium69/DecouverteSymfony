@@ -10,7 +10,14 @@
 
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
-    <h2>Mon string : {{ tableauName }} </h2>
+    <h2>Mon string : {{ textTest }} </h2>
+
+    <h4>Les name</h4>
+    <ul>
+        {% for name in tableauName %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
     This friendly message is coming from:
     <ul>
         <li>Your controller at <code><a href="{{ 'D:/Github/Symfony/dauphin/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
